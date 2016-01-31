@@ -111,4 +111,5 @@ gradle-app.setting
 
 ## OS Specific
 .DS_Store
+/.nb-gradle/
 Thumbs.db
