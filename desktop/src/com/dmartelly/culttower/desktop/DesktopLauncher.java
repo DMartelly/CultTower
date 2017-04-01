@@ -7,6 +7,9 @@ import com.dmartelly.culttower.CultTower;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.title = "Cult Tower";
+		config.width = 1280;
+		config.height = 960;
 		new LwjglApplication(new CultTower(), config);
 	}
 }
