@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Rectangle;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 class Door extends Sprite {
 
     Rectangle rect;
-    private ArrayList text;
+    private List<String> text;
 
     Door(float x, float y) {
         super(new Sprite(new Texture("Door.png")));
@@ -25,14 +26,14 @@ class Door extends Sprite {
         this.setSize(this.getWidth() * 2, this.getHeight() * 2);
         this.rect = new Rectangle(this.getX(), this.getY(),
                 this.getWidth(), this.getHeight());
-        text = new ArrayList();
+        text = new ArrayList<String>();
     }
 
     void addText(String words) {
         text.add(words);
     }
 
-    Object getText(int i) {
+    String getText(int i) {
         return text.get(i);
     }
 
